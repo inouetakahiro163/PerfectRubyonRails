@@ -33,4 +33,12 @@ class Book < ApplicationRecord
   def high_price?
     price >= 5000 
   end
+
+  # enum型で販売状況を管理する
+  # enum カラム名: { A: 0, B: 1} のようにハッシュ形式で名称：値でセットする
+  enum sales_status: {
+    resevation: 0, 
+    now_on_sale: 1,
+    end_of_print: 2
+  }
 end
