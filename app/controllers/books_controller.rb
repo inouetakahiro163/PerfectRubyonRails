@@ -9,6 +9,7 @@ class BooksController < ApplicationController
 
   def show
     respond_to do |format|
+      # render :show, format: :html ↓
       format.html
       format.json
     end

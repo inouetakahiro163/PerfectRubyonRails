@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
   def show
+    render :show
   end
 
   def edit
